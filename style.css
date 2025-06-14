@@ -121,12 +121,6 @@ a {
   justify-content: center;
 }
 
-/* .icon-wrapper {
-  background-color: white;
-  width: 70px;
-  height: 70px;
-} */
-
 .icon-btn {
   background-color: white !important;
   width: 60px;
@@ -235,4 +229,111 @@ a {
     margin-right: 0;
     margin-bottom: 15px;
   }
+}
+
+/* font khujun */
+.search-font {
+  padding: 0 0 60px 0;
+}
+.search-font-wrapper {
+  background: linear-gradient(95deg, #15016b, #2902d1);
+}
+
+.font-search-bar {
+  outline: none !important;
+  padding: 15px;
+}
+
+.slider-track {
+  height: 5px;
+  background-color: #000;
+  position: relative;
+  border-radius: 4px;
+}
+
+.write-font {
+  /* padding: 0 0 60px 0; */
+  /* margin-bottom: 60px !important; */
+}
+
+.write-font-wrapper {
+  background: linear-gradient(95deg, #15016b, #2902d1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /*  */
+}
+
+.write-search-bar {
+  outline: none !important;
+  padding: 15px;
+}
+
+.slider-handle {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* free font */
+
+.free-font {
+  margin-top: 60px !important;
+}
+
+.free-font-wrapper {
+  background: linear-gradient(95deg, #15016b, #2902d1);
+  height: 80px;
+  overflow: hidden;
+  position: relative;
+}
+
+.free-font-design {
+  background: linear-gradient(108deg, #15016b, #2902d1);
+  position: absolute;
+  top: -22px;
+  left: -14px;
+  overflow: hidden;
+}
+
+.free-font-text {
+  text-align: center;
+  color: #fff;
+  margin-top: 25px;
+}
+
+.free-font-card {
+  padding: 60px 0 60px 0;
+}
+
+.free-card {
+  width: 592px !important;
+  height: 300px !important;
+  box-shadow: -2px -4px 35px -12px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -2px -4px 35px -12px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px -4px 35px -12px rgba(0, 0, 0, 0.75);
+
+  overflow: hidden;
+}
+
+.card-img > img {
+  height: 104%;
+  width: 110%;
+  position: absolute;
+  top: -29px;
+  left: -31px;
+}
+.card-wrapper {
+  position: relative;
+}
+.card-button {
+  position: absolute;
+  bottom: -15px;
+  left: 175px;
 }
