@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- custom css -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
     <!-- bootstrap -->
     <link
       rel="stylesheet"
@@ -12,323 +12,369 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <title>home</title>
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+      integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
   </head>
   <body>
     <!-- header -->
-    <header class="">
-      <nav class="navbar header navbar-expand-lg bg-body-tertiary navbar-dark">
-        <div class="container-fluid">
-          <img class="navbar-brand logo" src="./images/top icon white.png" />
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#">ফন্ট</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">টাইপোগ্রাফি</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">ডিজাইনার </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">ডেভেলপার </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link">আমাদের সম্পর্কে </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
+    <div class="header">
+      <div class="header-wrapper">
+        <nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <div class="logo-placeholder">
+                <img src="./images/top icon white.png" class="img-fluid" />
+              </div>
+            </a>
 
-    <!-- hero section -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">হোম</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">টাইপোগ্রাফি</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">ডিজাইনার</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">ডেভেলপার</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">ইনসাইডার</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">কোম্পানি</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- hero -->
 
     <section class="hero">
-      <div class="container">
-        <div class="hero-wrapper">
-          <div class="hero-design">
-            <div class="hero-text-left">
-              <p class="lt1"><a href="#">ফন্ট সংখ্যা</a></p>
-              <p class="lt2"><a href="#">রিসোর্স সংখ্যা</a></p>
+      <div class="hero-wrapper container">
+        <div class="row hero-img-row">
+          <div class="col-md-4 position-relative">
+            <div class="left-img pt-5">
+              <img class="img-fluid" src="./images/left.png" alt="" />
             </div>
-            <div class="hero-text-right">
-              <p class="rt1"><a href="#">ফন্ট ডাউনলোড</a></p>
-              <p class="rt2"><a href="#">রিসোর্স ডাউনলোড</a></p>
+            <div class="left-text text-white position-absolute">
+              <h2 class="pb-5">Font Sonkha</h2>
+              <h2>Resource Sonkha</h2>
             </div>
-            <div class="hero-middle-image">
-              <img src="./images/middle image.png" class="design img-fluid" />
+          </div>
+          <div class="col-md-4">
+            <div class="middle-img">
+              <img class="img-fluid" src="./images/middle.png" alt="" />
+            </div>
+          </div>
+          <div class="col-md-4 position-relative">
+            <div class="right-img pt-5">
+              <img class="img-fluid" src="./images/right.png" alt="" />
+            </div>
+            <div class="right-text text-white position-absolute">
+              <h2 class="pb-5">Font Download</h2>
+              <h2>Resource Download</h2>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="line">
-        <img src="./images/Line 2.png" class="img-fluid" alt="" />
+      <div class="line pb-5 text-center">
+        <img src="./images/Line 2.png" class="img-fluid w-25" alt="" />
       </div>
     </section>
 
-    <!-- stay connected section -->
+    <!-- social meadia section -->
 
-    <section class="stay-connected">
-      <div class="container">
-        <div
-          class="stay-connected-wrapper rounded-5 d-flex align-items-center justify-content-between"
-        >
-          <!-- facebook page -->
-          <div
-            class="card rounded-5 position-relative"
-            style="width: 18rem; background-color: white"
-          >
-            <div class="card-top-design position-relative rounded-5">
-              <img
-                src="./images/Ellipse 1.png"
-                style="width: 71px; height: 71px"
-                class="card-img-top rounded-5 position-absolute"
-                alt="..."
-              />
+    <section class="social">
+      <div class="social-wrapper container">
+        <div class="social-row">
+          <div class="social-card-container row g-4 p-5 rounded-5">
+            <!-- card start -->
+            <div class="col-md-4 col-sm-12">
+              <div class="card rounded-5" style="background-color: white">
+                <div class="card-top-design position-relative rounded-5">
+                  <img
+                    src="./images/Ellipse 1.png"
+                    style="width: 71px; height: 71px"
+                    class="card-img-top rounded-5 position-absolute"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-text position-absolute">
+                  <h3>আমাদের অফিসিয়াল ফেসবুক পেজ</h3>
+                </div>
+                <div class="card-body card-body-bg rounded-bottom-5">
+                  <!-- <div class="icon-wrapper rounded-5"> -->
+                  <a href="#" class="btn btn-primary icon-btn"
+                    ><img src="./images/🦆 icon _facebook f icon_.png" alt=""
+                  /></a>
+                  <!-- </div> -->
+                </div>
+              </div>
             </div>
-            <div class="card-text position-absolute">
-              <h3>আমাদের অফিসিয়াল ফেসবুক পেজ</h3>
+            <div class="col-md-4 col-sm-12">
+              <div class="card rounded-5" style="background-color: white">
+                <div class="card-top-design position-relative rounded-5">
+                  <img
+                    src="./images/Ellipse 1.png"
+                    style="width: 71px; height: 71px"
+                    class="card-img-top rounded-5 position-absolute"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-text position-absolute">
+                  <h3>আমাদের অফিসিয়াল ফেসবুক পেজ</h3>
+                </div>
+                <div class="card-body card-body-bg rounded-bottom-5">
+                  <!-- <div class="icon-wrapper rounded-5"> -->
+                  <a href="#" class="btn btn-primary icon-btn"
+                    ><img src="./images/🦆 icon _facebook f icon_.png" alt=""
+                  /></a>
+                  <!-- </div> -->
+                </div>
+              </div>
             </div>
-            <div class="card-body card-body-bg rounded-bottom-5">
-              <!-- <div class="icon-wrapper rounded-5"> -->
-              <a href="#" class="btn btn-primary icon-btn"
-                ><img src="./images/🦆 icon _facebook f icon_.png" alt=""
-              /></a>
-              <!-- </div> -->
+            <div class="col-md-4 col-sm-12">
+              <div class="card rounded-5" style="background-color: white">
+                <div class="card-top-design position-relative rounded-5">
+                  <img
+                    src="./images/Ellipse 1.png"
+                    style="width: 71px; height: 71px"
+                    class="card-img-top rounded-5 position-absolute"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-text position-absolute">
+                  <h3>আমাদের অফিসিয়াল ফেসবুক পেজ</h3>
+                </div>
+                <div class="card-body card-body-bg rounded-bottom-5">
+                  <!-- <div class="icon-wrapper rounded-5"> -->
+                  <a href="#" class="btn btn-primary icon-btn"
+                    ><img src="./images/🦆 icon _facebook f icon_.png" alt=""
+                  /></a>
+                  <!-- </div> -->
+                </div>
+              </div>
             </div>
+            <!-- card end -->
           </div>
-
-          <!-- facebook group -->
-
-          <div
-            class="card rounded-5 position-relative"
-            style="width: 18rem; background-color: white"
-          >
-            <div class="card-top-design position-relative rounded-5">
-              <img
-                src="./images/Ellipse 1.png"
-                style="width: 71px; height: 71px"
-                class="card-img-top rounded-5 position-absolute"
-                alt="..."
-              />
-            </div>
-            <div class="card-text position-absolute">
-              <h3>আমাদের অফিসিয়াল ফেসবুক গ্রুপ</h3>
-            </div>
-            <div class="card-body card-body-bg rounded-bottom-5">
-              <!-- <div class="icon-wrapper rounded-5"> -->
-              <a href="#" class="btn btn-primary icon-btn"
-                ><img src="./images/🦆 icon _Users icon_.png" alt=""
-              /></a>
-              <!-- </div> -->
-            </div>
-          </div>
-
-          <!-- instagram -->
-          <div
-            class="card rounded-5 position-relative"
-            style="width: 18rem; background-color: white"
-          >
-            <div class="card-top-design position-relative rounded-5">
-              <img
-                src="./images/Ellipse 1.png"
-                style="width: 71px; height: 71px"
-                class="card-img-top rounded-5 position-absolute"
-                alt="..."
-              />
-            </div>
-            <div class="card-text position-absolute">
-              <h3>আমাদের অফিসিয়াল ইনস্টাগ্রাম</h3>
-            </div>
-            <div class="card-body card-body-bg rounded-bottom-5">
-              <!-- <div class="icon-wrapper rounded-5"> -->
-              <a href="#" class="btn btn-primary icon-btn"
-                ><img src="./images/🦆 icon _instagram icon_.png" alt=""
-              /></a>
-              <!-- </div> -->
-            </div>
+          <div class="line py-5 text-center">
+            <img src="./images/Line 2.png" class="img-fluid w-25" alt="" />
           </div>
         </div>
-      </div>
-      <div class="line">
-        <img src="./images/Line 2.png" class="img-fluid pt-5" alt="" />
       </div>
     </section>
 
-    <!-- our services -->
+    <!-- services -->
 
-    <!-- our services -->
+    <section class="service mb-5">
+      <div class="service-wrapper container">
+        <h2 class="text-center fw-bolder pb-5">Amader Sebagulo</h2>
 
-    <section class="our-service">
-      <div class="container">
-        <div class="services-wrapper">
-          <div class="container-custom m-auto">
-            <div class="row">
-              <!-- Free Font -->
-              <div class="col-lg-6 col-md-12">
-                <div class="font-card free-font">
-                  <div class="icon-container rounded-4">
-                    <img
-                      src="./images/font 1.png"
-                      style="width: 30px; height: 30px"
-                      alt=""
-                    />
-                  </div>
-                  <div class="font-info">
-                    <h3>Free Font</h3>
-                    <p>
-                      বাংলা যাশা কে সোবার কাসে পৌসে দিতা<br />
-                      আমাদের কিতু ফ্রি ফন্ট, সোবার জননো বোঝাবার<br />
-                      উপলগি করা হলো
-                    </p>
-                  </div>
+        <div class="row service-card-container">
+          <div class="col-md-6 col-sm-12 my-3">
+            <div class="service-font-card rounded-5 bg-white overflow-hidden">
+              <div
+                class="service-font-card-wrapper w-50 position-relative"
+                style="height: 130px"
+              >
+                <div
+                  class="service-font-card-design w-50 position-relative"
+                  style="height: 100%"
+                >
+                  <img
+                    src="./images//font 1.png"
+                    class="img-fluid h-100 w-100 z-3 service-font-card-img"
+                    alt=""
+                  />
+
+                  <div
+                    class="service-font-card-circle w-75 h-100 rounded-circle z-1 bg-secondary position-absolute"
+                  ></div>
+                </div>
+
+                <!-- text -->
+                <div class="service-font-card-text position-absolute w-100">
+                  <h3>Free font</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nulla rerum error dolorem a ipsum hic soluta distinctio
+                  </p>
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 my-3">
+            <div class="service-font-card rounded-5 bg-white overflow-hidden">
+              <div
+                class="service-font-card-wrapper w-50 position-relative"
+                style="height: 130px"
+              >
+                <div
+                  class="service-font-card-design w-50 position-relative"
+                  style="height: 100%"
+                >
+                  <img
+                    src="./images//font 1.png"
+                    class="img-fluid h-100 w-100 z-3 service-font-card-img"
+                    alt=""
+                  />
 
-              <!-- Premium Font -->
-              <div class="col-lg-6 col-md-12">
-                <div class="font-card premium-font">
-                  <div class="icon-container rounded-4">
-                    <img
-                      src="./images/font 2.png"
-                      style="width: 30px; height: 30px"
-                      alt=""
-                    />
-                  </div>
-                  <div class="font-info">
-                    <h3>Premium Font</h3>
-                    <p>
-                      বাংলা যাশা কে সোবার কাসে পৌসে দিতা<br />
-                      আমাদের কিতু ফ্রি ফন্ট, সোবার জননো বোঝাবার<br />
-                      উপলগি করা হলো
-                    </p>
-                  </div>
+                  <div
+                    class="service-font-card-circle w-75 h-100 rounded-circle z-1 bg-secondary position-absolute"
+                  ></div>
+                </div>
+
+                <!-- text -->
+                <div class="service-font-card-text position-absolute w-100">
+                  <h3>Free font</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nulla rerum error dolorem a ipsum hic soluta distinctio
+                  </p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <div class="row service-card-container">
+          <div class="col-md-6 col-sm-12 my-3">
+            <div class="service-font-card rounded-5 bg-white overflow-hidden">
+              <div
+                class="service-font-card-wrapper w-50 position-relative"
+                style="height: 130px"
+              >
+                <div
+                  class="service-font-card-design w-50 position-relative"
+                  style="height: 100%"
+                >
+                  <img
+                    src="./images//font 1.png"
+                    class="img-fluid h-100 w-100 z-3 service-font-card-img"
+                    alt=""
+                  />
 
-              <!-- Semi Premium Font -->
-              <div class="col-lg-6 col-md-12">
-                <div class="font-card semi-premium-font">
-                  <div class="icon-container rounded-4">
-                    <img
-                      src="./images/font 3.png"
-                      style="width: 30px; height: 30px"
-                      alt=""
-                    />
-                  </div>
-                  <div class="font-info">
-                    <h3>Semi Premium Font</h3>
-                    <p>
-                      বাংলা যাশা কে সোবার কাসে পৌসে দিতা<br />
-                      আমাদের কিতু ফ্রি ফন্ট, সোবার জননো বোঝাবার<br />
-                      উপলগি করা হলো
-                    </p>
-                  </div>
+                  <div
+                    class="service-font-card-circle w-75 h-100 rounded-circle z-1 bg-secondary position-absolute"
+                  ></div>
+                </div>
+
+                <!-- text -->
+                <div class="service-font-card-text position-absolute w-100">
+                  <h3>Free font</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nulla rerum error dolorem a ipsum hic soluta distinctio
+                  </p>
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 my-3">
+            <div class="service-font-card rounded-5 bg-white overflow-hidden">
+              <div
+                class="service-font-card-wrapper w-50 position-relative"
+                style="height: 130px"
+              >
+                <div
+                  class="service-font-card-design w-50 position-relative"
+                  style="height: 100%"
+                >
+                  <img
+                    src="./images//font 1.png"
+                    class="img-fluid h-100 w-100 z-3 service-font-card-img"
+                    alt=""
+                  />
 
-              <!-- Specials Font -->
-              <div class="col-lg-6 col-md-12">
-                <div class="font-card specials-font">
-                  <div class="icon-container rounded-4">
-                    <img
-                      src="./images/font 4.png"
-                      style="width: 30px; height: 30px"
-                      alt=""
-                    />
-                  </div>
-                  <div class="font-info">
-                    <h3>Specials Font</h3>
-                    <p>
-                      বাংলা যাশা কে সোবার কাসে পৌসে দিতা<br />
-                      আমাদের কিতু ফ্রি ফন্ট, সোবার জননো বোঝাবার<br />
-                      উপলগি করা হলো
-                    </p>
-                  </div>
+                  <div
+                    class="service-font-card-circle w-75 h-100 rounded-circle z-1 bg-secondary position-absolute"
+                  ></div>
+                </div>
+
+                <!-- text -->
+                <div class="service-font-card-text position-absolute w-100">
+                  <h3>Free font</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nulla rerum error dolorem a ipsum hic soluta distinctio
+                  </p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <div class="row service-card-container my-3">
+          <div class="col-md-6 w-sm-100 m-auto">
+            <div class="service-font-card rounded-5 bg-white overflow-hidden">
+              <div
+                class="service-font-card-wrapper w-50 position-relative"
+                style="height: 130px"
+              >
+                <div
+                  class="service-font-card-design w-50 position-relative"
+                  style="height: 100%"
+                >
+                  <img
+                    src="./images//font 1.png"
+                    class="img-fluid h-100 w-100 z-3 service-font-card-img"
+                    alt=""
+                  />
 
-              <!-- Writer Font (Bottom centered) -->
-              <div class="col-lg-8 col-md-12 mx-auto">
-                <div class="font-card writer-font">
-                  <div class="icon-container rounded-4">
-                    <img
-                      src="./images/pen.png"
-                      style="width: 30px; height: 30px"
-                      alt=""
-                    />
-                  </div>
-                  <div class="font-info">
-                    <h3>Writer Font</h3>
-                    <p>
-                      বাংলা যাশা কে সোবার কাসে পৌসে দিতা<br />
-                      আমাদের কিতু ফ্রি ফন্ট, সোবার জননো বোঝাবার<br />
-                      উপলগি করা হলো
-                    </p>
-                  </div>
+                  <div
+                    class="service-font-card-circle w-75 h-100 rounded-circle z-1 bg-secondary position-absolute"
+                  ></div>
+                </div>
+
+                <!-- text -->
+                <div class="service-font-card-text position-absolute w-100">
+                  <h3>Free font</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nulla rerum error dolorem a ipsum hic soluta distinctio
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="line">
-        <img src="./images/Line 2.png" class="img-fluid pt-5" alt="" />
+      <div class="line py-5 text-center">
+        <img src="./images/Line 2.png" class="img-fluid w-25" alt="" />
       </div>
     </section>
 
-    <!-- font search -->
+    <!-- free font -->
 
-    <section class="search-font">
-      <div class="container">
-        <div
-          class="search-font-wrapper text-center p-3 w-50 m-auto rounded-pill"
-        >
-          <input
-            type="text"
-            class="w-100 rounded-pill border-0 font-search-bar"
-            placeholder="font khujun"
-          />
-        </div>
-      </div>
-      <div class="line">
-        <img src="./images/Line 2.png" class="img-fluid pt-5" alt="" />
-      </div>
-    </section>
-
-    <!-- likhun -->
-
-    <section class="write-font">
-      <div class="container">
-        <div
-          class="write-font-wrapper text-center p-3 w-25 m-auto rounded-pill"
-        >
-          <input
-            type="text"
-            class="w-75 rounded-pill border-0 write-search-bar"
-            placeholder="font khujun"
-          />
-          <span class="mx-1">|</span>
-          <div class="slider-track w-25">
-            <div class="slider-handle"></div>
-          </div>
-        </div>
-        <div class="free-font">
-          <div class="free-font-wrapper w-50 rounded-pill m-auto">
+    <section class="free-font">
+      <div class="row mb-5">
+        <div class="col-md-12 w-50 m-auto">
+          <div class="free-font-wrapper w-75 rounded-pill m-auto">
             <div
               class="free-font-design rounded-pill"
               style="height: 100px; width: 100px"
@@ -343,54 +389,1192 @@
           </div>
         </div>
       </div>
-      <div class="line">
-        <img src="./images/Line 2.png" class="img-fluid pt-5" alt="" />
+
+      <div class="free-font-card-container container">
+        <div class="row">
+          <div class="col-md-6 col-sm-12 my-3">
+            <div class="free-card-wrapper position-relative">
+              <div class="card free-card rounded-5">
+                <div class="card-img overflow-hidden rounded-5">
+                  <img
+                    src="./images/tMask group.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="free-font-card-text w-100 p-5 position-absolute top-0 left-0"
+                >
+                  <div class="row top">
+                    <div class="col-12">
+                      <h3>Font name</h3>
+                      <p>designer name</p>
+                    </div>
+                  </div>
+                  <div class="row middle">
+                    <div class="col-12 text-center">
+                      <h3>Font name</h3>
+                      <p>designer name</p>
+                    </div>
+                  </div>
+
+                  <div class="row bottom">
+                    <div class="col-12">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <div>
+                          <span class="me-5"> Unicode & Ansi </span>
+                          <span> Style 2 </span>
+                        </div>
+                        <div class="icon">
+                          <span class="me-4"
+                            ><i class="fa-solid fa-heart"></i>
+
+                            20
+                          </span>
+                          <span
+                            ><i class="fa-solid fa-arrow-down"></i>
+
+                            200
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-button w-50">
+                <div class="btn btn-primary rounded-pill w-75">Download</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 my-3">
+            <div class="free-card-wrapper position-relative">
+              <div class="card free-card rounded-5">
+                <div class="card-img overflow-hidden rounded-5">
+                  <img
+                    src="./images/tMask group.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="free-font-card-text w-100 p-5 position-absolute top-0 left-0"
+                >
+                  <div class="row top">
+                    <div class="col-12">
+                      <h3>Font name</h3>
+                      <p>designer name</p>
+                    </div>
+                  </div>
+                  <div class="row middle">
+                    <div class="col-12 text-center">
+                      <h3>Font name</h3>
+                      <p>designer name</p>
+                    </div>
+                  </div>
+
+                  <div class="row bottom">
+                    <div class="col-12">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <div>
+                          <span class="me-5"> Unicode & Ansi </span>
+                          <span> Style 2 </span>
+                        </div>
+                        <div class="icon">
+                          <span class="me-4"
+                            ><i class="fa-solid fa-heart"></i>
+
+                            20
+                          </span>
+                          <span
+                            ><i class="fa-solid fa-arrow-down"></i>
+
+                            200
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-button w-50">
+                <div class="btn btn-primary rounded-pill w-75">Download</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-12 my-3">
+            <div class="free-card-wrapper position-relative">
+              <div class="card free-card rounded-5">
+                <div class="card-img overflow-hidden rounded-5">
+                  <img
+                    src="./images/tMask group.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="free-font-card-text w-100 p-5 position-absolute top-0 left-0"
+                >
+                  <div class="row top">
+                    <div class="col-12">
+                      <h3>Font name</h3>
+                      <p>designer name</p>
+                    </div>
+                  </div>
+                  <div class="row middle">
+                    <div class="col-12 text-center">
+                      <h3>Font name</h3>
+                      <p>designer name</p>
+                    </div>
+                  </div>
+
+                  <div class="row bottom">
+                    <div class="col-12">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <div>
+                          <span class="me-5"> Unicode & Ansi </span>
+                          <span> Style 2 </span>
+                        </div>
+                        <div class="icon">
+                          <span class="me-4"
+                            ><i class="fa-solid fa-heart"></i>
+
+                            20
+                          </span>
+                          <span
+                            ><i class="fa-solid fa-arrow-down"></i>
+
+                            200
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-button w-50">
+                <div class="btn btn-primary rounded-pill w-75">Download</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 my-3">
+            <div class="free-card-wrapper position-relative">
+              <div class="card free-card rounded-5">
+                <div class="card-img overflow-hidden rounded-5">
+                  <img
+                    src="./images/tMask group.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="free-font-card-text w-100 p-5 position-absolute top-0 left-0"
+                >
+                  <div class="row top">
+                    <div class="col-12">
+                      <h3>Font name</h3>
+                      <p>designer name</p>
+                    </div>
+                  </div>
+                  <div class="row middle">
+                    <div class="col-12 text-center">
+                      <h3>Font name</h3>
+                      <p>designer name</p>
+                    </div>
+                  </div>
+
+                  <div class="row bottom">
+                    <div class="col-12">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <div>
+                          <span class="me-5"> Unicode & Ansi </span>
+                          <span> Style 2 </span>
+                        </div>
+                        <div class="icon">
+                          <span class="me-4"
+                            ><i class="fa-solid fa-heart"></i>
+
+                            20
+                          </span>
+                          <span
+                            ><i class="fa-solid fa-arrow-down"></i>
+
+                            200
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-button w-50">
+                <div class="btn btn-primary rounded-pill w-75">Download</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-12 my-3">
+            <div class="free-card-wrapper position-relative">
+              <div class="card free-card rounded-5">
+                <div class="card-img overflow-hidden rounded-5">
+                  <img
+                    src="./images/tMask group.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="free-font-card-text w-100 p-5 position-absolute top-0 left-0"
+                >
+                  <div class="row top">
+                    <div class="col-12">
+                      <h3>Font name</h3>
+                      <p>designer name</p>
+                    </div>
+                  </div>
+                  <div class="row middle">
+                    <div class="col-12 text-center">
+                      <h3>Font name</h3>
+                      <p>designer name</p>
+                    </div>
+                  </div>
+
+                  <div class="row bottom">
+                    <div class="col-12">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <div>
+                          <span class="me-5"> Unicode & Ansi </span>
+                          <span> Style 2 </span>
+                        </div>
+                        <div class="icon">
+                          <span class="me-4"
+                            ><i class="fa-solid fa-heart"></i>
+
+                            20
+                          </span>
+                          <span
+                            ><i class="fa-solid fa-arrow-down"></i>
+
+                            200
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-button w-50">
+                <div class="btn btn-primary rounded-pill w-75">Download</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 my-3">
+            <div class="free-card-wrapper position-relative">
+              <div class="card free-card rounded-5">
+                <div class="card-img overflow-hidden rounded-5">
+                  <img
+                    src="./images/tMask group.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="free-font-card-text w-100 p-5 position-absolute top-0 left-0"
+                >
+                  <div class="row top">
+                    <div class="col-12">
+                      <h3>Font name</h3>
+                      <p>designer name</p>
+                    </div>
+                  </div>
+                  <div class="row middle">
+                    <div class="col-12 text-center">
+                      <h3>Font name</h3>
+                      <p>designer name</p>
+                    </div>
+                  </div>
+
+                  <div class="row bottom">
+                    <div class="col-12">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <div>
+                          <span class="me-5"> Unicode & Ansi </span>
+                          <span> Style 2 </span>
+                        </div>
+                        <div class="icon">
+                          <span class="me-4"
+                            ><i class="fa-solid fa-heart"></i>
+
+                            20
+                          </span>
+                          <span
+                            ><i class="fa-solid fa-arrow-down"></i>
+
+                            200
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-button w-50">
+                <div class="btn btn-primary rounded-pill w-75">Download</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="line py-5 text-center">
+        <img src="./images/Line 2.png" class="img-fluid w-25" alt="" />
       </div>
     </section>
 
-    <section class="free-font-card">
-      <div class="free-font-card-wrapper">
-        <div class="cards-container container">
-          <div class="card-wrapper">
-            <div class="card free-card rounded-5">
-              <div class="card-img">
-                <img src="./images/Mask group.png" class="" alt="" />
-              </div>
-              <div class="card-text p-4 w-100">
-                <div class="top">
-                  <h3>Font Name</h3>
-                  <p>desiner name</p>
-                </div>
-                <div class="middle text-center">
-                  <h2>FONT NAME</h2>
-                  <h3>amar sonar bangla</h3>
+    <!-- premium font -->
+    <section class="free-font">
+      <div class="row mb-5">
+        <div class="col-md-12 w-50 m-auto">
+          <div class="free-font-wrapper w-75 rounded-pill m-auto">
+            <div
+              class="free-font-design rounded-pill"
+              style="height: 100px; width: 100px"
+            >
+              <img
+                src="./images/amader free font.png"
+                class="w-100 h-100"
+                alt=""
+              />
+            </div>
+            <p class="free-font-text">amader free font</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="free-font-card-container container">
+        <div class="row">
+          <div class="col-md-6 col-sm-12 my-3">
+            <div class="free-card-wrapper position-relative">
+              <div class="card free-card rounded-5">
+                <div class="card-img overflow-hidden rounded-5">
+                  <img
+                    src="./images/tMask group.png"
+                    class="img-fluid"
+                    alt=""
+                  />
                 </div>
                 <div
-                  class="bottom mt-4 d-flex align-items-center justify-content-between"
+                  class="free-font-card-text w-100 p-5 position-absolute top-0 left-0"
                 >
-                  <div
-                    class="txt d-flex align-items-center justify-content-between"
-                  >
-                    <p class="me-5">unicode & ansi</p>
-                    <p>style 2</p>
+                  <div class="row top">
+                    <div class="col-12">
+                      <h3>Font name</h3>
+                      <p>designer name</p>
+                    </div>
                   </div>
-                  <div class="ico"></div>
+                  <div class="row middle">
+                    <div class="col-12 text-center">
+                      <h3>Font name</h3>
+                      <p>designer name</p>
+                    </div>
+                  </div>
+
+                  <div class="row bottom">
+                    <div class="col-12">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <div>
+                          <span class="me-5"> Unicode & Ansi </span>
+                          <span> Style 2 </span>
+                        </div>
+                        <div class="icon">
+                          <span class="me-4"
+                            ><i class="fa-solid fa-heart"></i>
+
+                            20
+                          </span>
+                          <span
+                            ><i class="fa-solid fa-arrow-down"></i>
+
+                            200
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
+              <div class="card-button w-50">
+                <div class="btn btn-primary rounded-pill w-75">Download</div>
+              </div>
             </div>
-            <div class="card-button w-75">
-              <div class="btn btn-primary rounded-pill w-25">Download</div>
+          </div>
+          <div class="col-md-6 col-sm-12 my-3">
+            <div class="free-card-wrapper position-relative">
+              <div class="card free-card rounded-5">
+                <div class="card-img overflow-hidden rounded-5">
+                  <img
+                    src="./images/tMask group.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="free-font-card-text w-100 p-5 position-absolute top-0 left-0"
+                >
+                  <div class="row top">
+                    <div class="col-12">
+                      <h3>Font name</h3>
+                      <p>designer name</p>
+                    </div>
+                  </div>
+                  <div class="row middle">
+                    <div class="col-12 text-center">
+                      <h3>Font name</h3>
+                      <p>designer name</p>
+                    </div>
+                  </div>
+
+                  <div class="row bottom">
+                    <div class="col-12">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <div>
+                          <span class="me-5"> Unicode & Ansi </span>
+                          <span> Style 2 </span>
+                        </div>
+                        <div class="icon">
+                          <span class="me-4"
+                            ><i class="fa-solid fa-heart"></i>
+
+                            20
+                          </span>
+                          <span
+                            ><i class="fa-solid fa-arrow-down"></i>
+
+                            200
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-button w-50">
+                <div class="btn btn-primary rounded-pill w-75">Download</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-12 my-3">
+            <div class="free-card-wrapper position-relative">
+              <div class="card free-card rounded-5">
+                <div class="card-img overflow-hidden rounded-5">
+                  <img
+                    src="./images/tMask group.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="free-font-card-text w-100 p-5 position-absolute top-0 left-0"
+                >
+                  <div class="row top">
+                    <div class="col-12">
+                      <h3>Font name</h3>
+                      <p>designer name</p>
+                    </div>
+                  </div>
+                  <div class="row middle">
+                    <div class="col-12 text-center">
+                      <h3>Font name</h3>
+                      <p>designer name</p>
+                    </div>
+                  </div>
+
+                  <div class="row bottom">
+                    <div class="col-12">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <div>
+                          <span class="me-5"> Unicode & Ansi </span>
+                          <span> Style 2 </span>
+                        </div>
+                        <div class="icon">
+                          <span class="me-4"
+                            ><i class="fa-solid fa-heart"></i>
+
+                            20
+                          </span>
+                          <span
+                            ><i class="fa-solid fa-arrow-down"></i>
+
+                            200
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-button w-50">
+                <div class="btn btn-primary rounded-pill w-75">Download</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 my-3">
+            <div class="free-card-wrapper position-relative">
+              <div class="card free-card rounded-5">
+                <div class="card-img overflow-hidden rounded-5">
+                  <img
+                    src="./images/tMask group.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="free-font-card-text w-100 p-5 position-absolute top-0 left-0"
+                >
+                  <div class="row top">
+                    <div class="col-12">
+                      <h3>Font name</h3>
+                      <p>designer name</p>
+                    </div>
+                  </div>
+                  <div class="row middle">
+                    <div class="col-12 text-center">
+                      <h3>Font name</h3>
+                      <p>designer name</p>
+                    </div>
+                  </div>
+
+                  <div class="row bottom">
+                    <div class="col-12">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <div>
+                          <span class="me-5"> Unicode & Ansi </span>
+                          <span> Style 2 </span>
+                        </div>
+                        <div class="icon">
+                          <span class="me-4"
+                            ><i class="fa-solid fa-heart"></i>
+
+                            20
+                          </span>
+                          <span
+                            ><i class="fa-solid fa-arrow-down"></i>
+
+                            200
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-button w-50">
+                <div class="btn btn-primary rounded-pill w-75">Download</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-12 my-3">
+            <div class="free-card-wrapper position-relative">
+              <div class="card free-card rounded-5">
+                <div class="card-img overflow-hidden rounded-5">
+                  <img
+                    src="./images/tMask group.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="free-font-card-text w-100 p-5 position-absolute top-0 left-0"
+                >
+                  <div class="row top">
+                    <div class="col-12">
+                      <h3>Font name</h3>
+                      <p>designer name</p>
+                    </div>
+                  </div>
+                  <div class="row middle">
+                    <div class="col-12 text-center">
+                      <h3>Font name</h3>
+                      <p>designer name</p>
+                    </div>
+                  </div>
+
+                  <div class="row bottom">
+                    <div class="col-12">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <div>
+                          <span class="me-5"> Unicode & Ansi </span>
+                          <span> Style 2 </span>
+                        </div>
+                        <div class="icon">
+                          <span class="me-4"
+                            ><i class="fa-solid fa-heart"></i>
+
+                            20
+                          </span>
+                          <span
+                            ><i class="fa-solid fa-arrow-down"></i>
+
+                            200
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-button w-50">
+                <div class="btn btn-primary rounded-pill w-75">Download</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 my-3">
+            <div class="free-card-wrapper position-relative">
+              <div class="card free-card rounded-5">
+                <div class="card-img overflow-hidden rounded-5">
+                  <img
+                    src="./images/tMask group.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="free-font-card-text w-100 p-5 position-absolute top-0 left-0"
+                >
+                  <div class="row top">
+                    <div class="col-12">
+                      <h3>Font name</h3>
+                      <p>designer name</p>
+                    </div>
+                  </div>
+                  <div class="row middle">
+                    <div class="col-12 text-center">
+                      <h3>Font name</h3>
+                      <p>designer name</p>
+                    </div>
+                  </div>
+
+                  <div class="row bottom">
+                    <div class="col-12">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <div>
+                          <span class="me-5"> Unicode & Ansi </span>
+                          <span> Style 2 </span>
+                        </div>
+                        <div class="icon">
+                          <span class="me-4"
+                            ><i class="fa-solid fa-heart"></i>
+
+                            20
+                          </span>
+                          <span
+                            ><i class="fa-solid fa-arrow-down"></i>
+
+                            200
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-button w-50">
+                <div class="btn btn-primary rounded-pill w-75">Download</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="line py-5 text-center">
+        <img src="./images/Line 2.png" class="img-fluid w-25" alt="" />
+      </div>
+    </section>
+
+    <!-- special font -->
+    <section class="free-font">
+      <div class="row mb-5">
+        <div class="col-md-12 w-50 m-auto">
+          <div class="free-font-wrapper w-75 rounded-pill m-auto">
+            <div
+              class="free-font-design rounded-pill"
+              style="height: 100px; width: 100px"
+            >
+              <img
+                src="./images/amader free font.png"
+                class="w-100 h-100"
+                alt=""
+              />
+            </div>
+            <p class="free-font-text">amader free font</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="free-font-card-container container">
+        <div class="row">
+          <div class="col-md-6 col-sm-12 my-3">
+            <div class="free-card-wrapper position-relative">
+              <div class="card free-card rounded-5">
+                <div class="card-img overflow-hidden rounded-5">
+                  <img
+                    src="./images/tMask group.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="free-font-card-text w-100 p-5 position-absolute top-0 left-0"
+                >
+                  <div class="row top">
+                    <div class="col-12">
+                      <h3>Font name</h3>
+                      <p>designer name</p>
+                    </div>
+                  </div>
+                  <div class="row middle">
+                    <div class="col-12 text-center">
+                      <h3>Font name</h3>
+                      <p>designer name</p>
+                    </div>
+                  </div>
+
+                  <div class="row bottom">
+                    <div class="col-12">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <div>
+                          <span class="me-5"> Unicode & Ansi </span>
+                          <span> Style 2 </span>
+                        </div>
+                        <div class="icon">
+                          <span class="me-4"
+                            ><i class="fa-solid fa-heart"></i>
+
+                            20
+                          </span>
+                          <span
+                            ><i class="fa-solid fa-arrow-down"></i>
+
+                            200
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-button w-50">
+                <div class="btn btn-primary rounded-pill w-75">Download</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 my-3">
+            <div class="free-card-wrapper position-relative">
+              <div class="card free-card rounded-5">
+                <div class="card-img overflow-hidden rounded-5">
+                  <img
+                    src="./images/tMask group.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="free-font-card-text w-100 p-5 position-absolute top-0 left-0"
+                >
+                  <div class="row top">
+                    <div class="col-12">
+                      <h3>Font name</h3>
+                      <p>designer name</p>
+                    </div>
+                  </div>
+                  <div class="row middle">
+                    <div class="col-12 text-center">
+                      <h3>Font name</h3>
+                      <p>designer name</p>
+                    </div>
+                  </div>
+
+                  <div class="row bottom">
+                    <div class="col-12">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <div>
+                          <span class="me-5"> Unicode & Ansi </span>
+                          <span> Style 2 </span>
+                        </div>
+                        <div class="icon">
+                          <span class="me-4"
+                            ><i class="fa-solid fa-heart"></i>
+
+                            20
+                          </span>
+                          <span
+                            ><i class="fa-solid fa-arrow-down"></i>
+
+                            200
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-button w-50">
+                <div class="btn btn-primary rounded-pill w-75">Download</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-12 my-3">
+            <div class="free-card-wrapper position-relative">
+              <div class="card free-card rounded-5">
+                <div class="card-img overflow-hidden rounded-5">
+                  <img
+                    src="./images/tMask group.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="free-font-card-text w-100 p-5 position-absolute top-0 left-0"
+                >
+                  <div class="row top">
+                    <div class="col-12">
+                      <h3>Font name</h3>
+                      <p>designer name</p>
+                    </div>
+                  </div>
+                  <div class="row middle">
+                    <div class="col-12 text-center">
+                      <h3>Font name</h3>
+                      <p>designer name</p>
+                    </div>
+                  </div>
+
+                  <div class="row bottom">
+                    <div class="col-12">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <div>
+                          <span class="me-5"> Unicode & Ansi </span>
+                          <span> Style 2 </span>
+                        </div>
+                        <div class="icon">
+                          <span class="me-4"
+                            ><i class="fa-solid fa-heart"></i>
+
+                            20
+                          </span>
+                          <span
+                            ><i class="fa-solid fa-arrow-down"></i>
+
+                            200
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-button w-50">
+                <div class="btn btn-primary rounded-pill w-75">Download</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 my-3">
+            <div class="free-card-wrapper position-relative">
+              <div class="card free-card rounded-5">
+                <div class="card-img overflow-hidden rounded-5">
+                  <img
+                    src="./images/tMask group.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="free-font-card-text w-100 p-5 position-absolute top-0 left-0"
+                >
+                  <div class="row top">
+                    <div class="col-12">
+                      <h3>Font name</h3>
+                      <p>designer name</p>
+                    </div>
+                  </div>
+                  <div class="row middle">
+                    <div class="col-12 text-center">
+                      <h3>Font name</h3>
+                      <p>designer name</p>
+                    </div>
+                  </div>
+
+                  <div class="row bottom">
+                    <div class="col-12">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <div>
+                          <span class="me-5"> Unicode & Ansi </span>
+                          <span> Style 2 </span>
+                        </div>
+                        <div class="icon">
+                          <span class="me-4"
+                            ><i class="fa-solid fa-heart"></i>
+
+                            20
+                          </span>
+                          <span
+                            ><i class="fa-solid fa-arrow-down"></i>
+
+                            200
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-button w-50">
+                <div class="btn btn-primary rounded-pill w-75">Download</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-12 my-3">
+            <div class="free-card-wrapper position-relative">
+              <div class="card free-card rounded-5">
+                <div class="card-img overflow-hidden rounded-5">
+                  <img
+                    src="./images/tMask group.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="free-font-card-text w-100 p-5 position-absolute top-0 left-0"
+                >
+                  <div class="row top">
+                    <div class="col-12">
+                      <h3>Font name</h3>
+                      <p>designer name</p>
+                    </div>
+                  </div>
+                  <div class="row middle">
+                    <div class="col-12 text-center">
+                      <h3>Font name</h3>
+                      <p>designer name</p>
+                    </div>
+                  </div>
+
+                  <div class="row bottom">
+                    <div class="col-12">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <div>
+                          <span class="me-5"> Unicode & Ansi </span>
+                          <span> Style 2 </span>
+                        </div>
+                        <div class="icon">
+                          <span class="me-4"
+                            ><i class="fa-solid fa-heart"></i>
+
+                            20
+                          </span>
+                          <span
+                            ><i class="fa-solid fa-arrow-down"></i>
+
+                            200
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-button w-50">
+                <div class="btn btn-primary rounded-pill w-75">Download</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 my-3">
+            <div class="free-card-wrapper position-relative">
+              <div class="card free-card rounded-5">
+                <div class="card-img overflow-hidden rounded-5">
+                  <img
+                    src="./images/tMask group.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="free-font-card-text w-100 p-5 position-absolute top-0 left-0"
+                >
+                  <div class="row top">
+                    <div class="col-12">
+                      <h3>Font name</h3>
+                      <p>designer name</p>
+                    </div>
+                  </div>
+                  <div class="row middle">
+                    <div class="col-12 text-center">
+                      <h3>Font name</h3>
+                      <p>designer name</p>
+                    </div>
+                  </div>
+
+                  <div class="row bottom">
+                    <div class="col-12">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
+                        <div>
+                          <span class="me-5"> Unicode & Ansi </span>
+                          <span> Style 2 </span>
+                        </div>
+                        <div class="icon">
+                          <span class="me-4"
+                            ><i class="fa-solid fa-heart"></i>
+
+                            20
+                          </span>
+                          <span
+                            ><i class="fa-solid fa-arrow-down"></i>
+
+                            200
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-button w-50">
+                <div class="btn btn-primary rounded-pill w-75">Download</div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- bootstrap js -->
+    <!-- footer -->
+
+    <section class="footer py-5">
+      <div class="footer-container container">
+        <div class="row footer-wrapper align-items-center">
+          <div class="col-md-6 col-sm-12 text-white">
+            <div class="row footer-left-text fw-bolder">
+              <span class="">
+                <span class="me-4"> jogajog </span>
+                <span class="me-4"> jogajog </span>
+                <span class="me-4"> jogajog </span>
+                <span class="me-4"> jogajog </span>
+              </span>
+              <p class="pt-4 mb-0">bongolekhon, bangladesh</p>
+              <p class="pt-4">e-maill: bongolekhon.com@gmail.com</p>
+            </div>
+            <div class="row footer-left-icon">
+              <div class="row py-3">
+                <div class="col-6">
+                  <img
+                    src="./images/kabita logo.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="col-6">
+                  <img
+                    src="./images/karuka logo.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="row py-3">
+                <div class="col-6">
+                  <img
+                    src="./images//bangla typography logo.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <div class="col-6">
+                  <img
+                    src="./images/rong be rong logo.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <p class="pt-5 fw-bold">
+              Copyright © bongolekhon all right reserved
+            </p>
+          </div>
+          <div
+            class="col-md-6 col-sm-12 justify-content-center align-items-center m-auto"
+          >
+            <div class="row text-center">
+              <p class="fw-bolder">amader sathei thakun</p>
+              <div class="row">
+                <div class="col-2">
+                  <img src="./images/fb.png" class="img-fluid" alt="" />
+                </div>
+                <div class="col-2">
+                  <img src="./images/fb.png" class="img-fluid" alt="" />
+                </div>
+                <div class="col-2">
+                  <img src="./images/fb.png" class="img-fluid" alt="" />
+                </div>
+                <div class="col-2">
+                  <img src="./images/fb.png" class="img-fluid" alt="" />
+                </div>
+                <div class="col-2">
+                  <img src="./images/fb.png" class="img-fluid" alt="" />
+                </div>
+                <div class="col-2">
+                  <img src="./images/fb.png" class="img-fluid" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
-<script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-  integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-  crossorigin="anonymous"
-></script>
